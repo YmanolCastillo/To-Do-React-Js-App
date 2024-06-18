@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2020", // Usa un target más moderno para mejores características de JS
+    "target": "es2020",
     "lib": [
       "dom",
       "dom.iterable",
@@ -10,7 +10,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true, // Mantén la verificación estricta para evitar errores
+    "strict": true, 
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
@@ -19,16 +19,16 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": ".", // Ayuda con la resolución de módulos
+    "baseUrl": ".", 
     "paths": {
-      "@/*": ["src/*"] // Alias para rutas más limpias
+      "@/*": ["src/*"]
     },
     "allowUnusedLabels": false,
-    "exactOptionalPropertyTypes": true, // Mejor manejo de propiedades opcionales
-    "noImplicitOverride": true, // Asegura que los métodos sobrescritos estén explícitamente marcados
-    "noPropertyAccessFromIndexSignature": true, // Evita acceso no seguro a propiedades
-    "noUncheckedIndexedAccess": true, // Ayuda con acceso seguro a índices
-    "useUnknownInCatchVariables": true // Fomenta el uso de unknown en variables catch
+    "exactOptionalPropertyTypes": true, 
+    "noImplicitOverride": true, 
+    "noPropertyAccessFromIndexSignature": true, 
+    "noUncheckedIndexedAccess": true, 
+    "useUnknownInCatchVariables": true 
   },
   "include": [
     "src"
