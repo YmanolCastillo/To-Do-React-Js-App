@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es2020", // Usa un target más moderno para mejores características de JS
     "lib": [
       "dom",
       "dom.iterable",
@@ -10,7 +10,7 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
+    "strict": true, // Mantén la verificación estricta para evitar errores
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
@@ -18,9 +18,24 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": ".", // Ayuda con la resolución de módulos
+    "paths": {
+      "@/*": ["src/*"] // Alias para rutas más limpias
+    },
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true, // Mejor manejo de propiedades opcionales
+    "noImplicitOverride": true, // Asegura que los métodos sobrescritos estén explícitamente marcados
+    "noPropertyAccessFromIndexSignature": true, // Evita acceso no seguro a propiedades
+    "noUncheckedIndexedAccess": true, // Ayuda con acceso seguro a índices
+    "useUnknownInCatchVariables": true // Fomenta el uso de unknown en variables catch
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "dist"
   ]
 }
